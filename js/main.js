@@ -27,3 +27,13 @@ var nom = "Lemichel ";
 var prenom = "Antoine";
 console.log("Bonjour", nom + prenom);
 console.log("==================");
+
+
+// Exercice n°5 : Des caractères au nombre
+console.log("Exercice n°5 : Des caractères au nombre");
+var myNumber = "123";
+var myNumberInt = parseInt(myNumber);
+console.log(typeof(myNumberInt), myNumberInt, "<- Chiffres");
+console.log(typeof(myNumber), myNumber, "<- Caractères");
+console.log("==================");
+
