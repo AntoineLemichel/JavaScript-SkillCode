@@ -46,9 +46,43 @@ console.log(maStringMiniscule.toLocaleUpperCase());
 console.log(maStringMajuscule.toLocaleLowerCase());
 console.log("==================");
 
+// Exercice n°7 : True ou False ?
+console.log("Exercice n°7 : True ou False ?");
+var myTrue = "True";
+var myFalse;
+if(myTrue){
+    console.log("True");
+}
+else {
+    console.log("False");
+}
+if(!myFalse)
+{
+    console.log("False");
+}
+else {
+    console.log("True");
+}
+console.log("==================");
+// Exercice n°8 : Calculer mon âge
+console.log("Exercice n°8: Calculer mon âge");
+var annee = prompt("Quelle est l'année actuel ?");
+var anneeNaissance = prompt("Quelle est ton année de naissance ?");
 
+var anneeInt = parseInt(annee);
+var anneeNaissanceInt = parseInt(anneeNaissance);
+console.log("Ton âge est de :", anneeInt - anneeNaissanceInt, "ans !");
+console.log("==================");
 
+// Exercice n°9 : Problème de chaussures
+console.log("Exercice n°9 : Problème de chaussures");
+var chaussure = 70;
+var jean = 59;
+var tShirt = 20;
+var reduction = (chaussure + jean + tShirt) * 0.20;
+var total = (chaussure + jean + tShirt) - reduction;
 
-
+console.log("Le prix total à payer est de :", total, "€");
+console.log("==================");
 
 
