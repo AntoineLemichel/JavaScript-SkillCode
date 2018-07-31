@@ -17,6 +17,13 @@ console.log("==================");
 
 // Exercice n°3 : Communiquer avec l'ordinateur
 console.log("Exercice n°3 : Communiquer avec l'ordinateur");
-var nom = prompt("Quel est votre nom ?");
+// var nom = prompt("Quel est votre nom ?");
 console.log("Bonjour", nom, "bienvenu à toi !");
+console.log("==================");
+
+//Exercice n°4 : Nom et prénom
+console.log("Exercice n°4 : Nom et prénom");
+var nom = "Lemichel ";
+var prenom = "Antoine";
+console.log("Bonjour", nom + prenom);
 console.log("==================");
