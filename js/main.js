@@ -37,3 +37,18 @@ console.log(typeof(myNumberInt), myNumberInt, "<- Chiffres");
 console.log(typeof(myNumber), myNumber, "<- Caractères");
 console.log("==================");
 
+
+// Exercice n°6 : Majuscule et minuscule
+console.log("Exercice n°6 : Majuscules et minuscules");
+var maStringMiniscule = "bonjour";
+var maStringMajuscule = "SALUT";
+console.log(maStringMiniscule.toLocaleUpperCase());
+console.log(maStringMajuscule.toLocaleLowerCase());
+console.log("==================");
+
+
+
+
+
+
+
