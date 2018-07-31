@@ -15,3 +15,8 @@ console.log(5^4);
 console.log("==================");
 
 
+// Exercice n°3 : Communiquer avec l'ordinateur
+console.log("Exercice n°3 : Communiquer avec l'ordinateur");
+var nom = prompt("Quel est votre nom ?");
+console.log("Bonjour", nom, "bienvenu à toi !");
+console.log("==================");
