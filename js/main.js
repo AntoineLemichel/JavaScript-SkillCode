@@ -2,16 +2,16 @@
 console.log("Excercice n°1 : Hello World");
 console.log("Hello World");
 var world = "Hello world";
-console.log(world, "ceci est le message avec la variable de type :", typeof(world));
+console.log(world, "ceci est le message avec la variable de type :", typeof (world));
 console.log("==================");
 
 // Exercice n°2 : Calcul divers.
 console.log("Excercice n°2 : Calcul divers");
-console.log(3*3);
-console.log(12/0);
-console.log(4+9+78);
-console.log(12-7);
-console.log(5^4);
+console.log(3 * 3);
+console.log(12 / 0);
+console.log(4 + 9 + 78);
+console.log(12 - 7);
+console.log(5 ^ 4);
 console.log("==================");
 
 
@@ -33,8 +33,8 @@ console.log("==================");
 console.log("Exercice n°5 : Des caractères au nombre");
 var myNumber = "123";
 var myNumberInt = parseInt(myNumber);
-console.log(typeof(myNumberInt), myNumberInt, "<- Chiffres");
-console.log(typeof(myNumber), myNumber, "<- Caractères");
+console.log(typeof (myNumberInt), myNumberInt, "<- Chiffres");
+console.log(typeof (myNumber), myNumber, "<- Caractères");
 console.log("==================");
 
 
@@ -50,18 +50,15 @@ console.log("==================");
 console.log("Exercice n°7 : True ou False ?");
 var myTrue = "True";
 var myFalse;
-if(myTrue){
-    console.log("True");
+if (myTrue) {
+  console.log("True");
+} else {
+  console.log("False");
 }
-else {
-    console.log("False");
-}
-if(!myFalse)
-{
-    console.log("False");
-}
-else {
-    console.log("True");
+if (!myFalse) {
+  console.log("False");
+} else {
+  console.log("True");
 }
 console.log("==================");
 // Exercice n°8 : Calculer mon âge
@@ -98,8 +95,132 @@ console.log("==================");
 
 //Exercice n°11 : Travailler avec les propriétés
 console.log("Exercice n°11 : Travailler avec les propriétés");
-var prenom = prompt("Votre prénom :");
-var nom = prompt("Votre nom :");
-console.log(prenom.substring(0,1).toLocaleUpperCase()+ prenom.substring(prenom.length -1).toLocaleUpperCase());
-console.log(nom.substring(0,1).toLocaleUpperCase() + nom.substring(nom.length -1).toLocaleUpperCase());
-console.log(prenom.substring(0, 1).toLocaleUpperCase() + prenom.substring(prenom.length -1).toLocaleUpperCase() + nom.substring(0, 1).toLocaleUpperCase() + nom.substring(nom.length -1).toLocaleUpperCase());
+// var prenom = prompt("Votre prénom :");
+// var nom = prompt("Votre nom :");
+console.log(prenom.substring(0, 1).toLocaleUpperCase() + prenom.substring(prenom.length - 1).toLocaleUpperCase());
+console.log(nom.substring(0, 1).toLocaleUpperCase() + nom.substring(nom.length - 1).toLocaleUpperCase());
+console.log(prenom.substring(0, 1).toLocaleUpperCase() + prenom.substring(prenom.length - 1).toLocaleUpperCase() + nom.substring(0, 1).toLocaleUpperCase() + nom.substring(nom.length - 1).toLocaleUpperCase());
+console.log("==================");
+
+
+// Exercice n°12 : Le nombre le plus grand
+console.log("Exercice n°12 : Le nombre le plus grand");
+var nombre1 = 5;
+var nombre2 = 7;
+var nombre3 = 9;
+var nombre4 = 11;
+console.log(Math.max(nombre1, nombre2, nombre3, nombre4));
+console.log("==================");
+
+
+// Exercice n°13 : Condition d'âge 
+console.log("Exercice n°13 : Condition d'âge");
+// var age = prompt("Quel âge as-tu?");
+// if(age >= 21){
+//     console.log("Accès autorisé");
+// }
+// if(age % 3){
+//     console.log("Ton âge est pair");
+// }
+// if(age / 4){
+//     console.log("Ton âge est au carré");
+// }
+// if(age < 0 || age != Number) {
+//     console.log("Dis moi ton vrai âge !");
+// }
+console.log("==================");
+
+// Exercice n°14 : Le nombre caché 
+console.log("Exercice n°14 : Le nombre caché");
+// var secret = Math.floor(Math.random() * 100) + 1;
+// var vie = 6;
+
+// console.log(secret);
+
+// var choixJoueur = Number(prompt("Choisis un chiffre entre 1 et 100"));
+// while (vie != 0 && choixJoueur != secret) {
+//   if (choixJoueur < secret) {
+//     console.log("Le chiffre est plus grand");
+//     choixJoueur = Number(prompt("Choisis un chiffre entre 1 et 100"));
+//     vie--;
+//     console.log("Vie restante : " + vie);
+//   }
+//   if (choixJoueur > secret) {
+//     console.log("Le chiffre est plus petit");
+//     choixJoueur = Number(prompt("Choisis un chiffre entre 1 et 100"));
+//     vie--;
+//     console.log("Vie restante : " + vie);
+//   }
+//   if (choixJoueur == secret) {
+//     console.log("Félicitation tu as trouvé le bon chiffre !");
+//     console.log("Il te restait", vie, "de vies");
+//   }
+//   if (vie == 0) {
+//     console.log("Tu as perdu tu as 0 vie");
+//   }
+//   if (!choixJoueur) {
+//     console.log("Il faut mettre un chiffre !");
+//     choixJoueur = Number(prompt("Choisis un chiffre entre 1 et 100"));
+//   }
+// }
+console.log("==================");
+
+
+//Exercice n°15 : Des nombres en boucle
+console.log("Exercice n°15 : Des nombres en boucle");
+for (var nombreBoucle = 1; nombreBoucle <= 100; nombreBoucle++){
+    console.log(nombreBoucle);
+}
+console.log("==================");
+
+
+//Exercice n°16 : Des nombres en boucle bis
+console.log("Exercice n°16 : Des nombres en boucle bis");
+for (var i = 0; i <= 100; i += 2){
+    console.log(i);
+}
+console.log("==================");
+
+
+//Exercice n°17 : Remplir la piscine
+
+
+//Exercice n°18 : Calcul de cercle
+console.log("Exercice n°18 : Calcul de cercle");
+// var x = Number(prompt("Rayon du cercle :"));
+// function airCercle(x){
+//     // Aire A = π x R² = 3,14 x 3² = 3,14 x 9 = 28,26 cm² 
+//     console.log("Air du cercle : " + Math.floor(Math.PI * (x * 3)) + " cm");
+// }
+// function perimCercle(x){
+//     //Périmètre P =2 x π x 7 = 43,96 cm (avec Pi arrondi à 3,14)
+//     console.log("Périmètre du cercle :" + Math.floor(2 * Math.PI * x) + " cm");
+// }
+// perimCercle(x);
+// airCercle(x);
+console.log("==================");
+
+//Exercice n°19 : Une pyramide
+console.log("Exercice n°19 : Une pyramide");
+
+for(var i = 1; i < 6; i++){
+    var etoile = '*';
+    console.log(etoile.repeat(i));
+}
+console.log("==================");
+
+
+//Exercice n°20 : FIZZ BUZZ
+console.log("Exercice n°20 : FIZZ BUZZ");
+for(fizz = 1; fizz <= 100; fizz++){
+    if(fizz != 0 && ( fizz % 3 == 0 )){
+        console.log(fizz +" FIZZ");
+    }
+    if(fizz != 0 && ( fizz % 5 == 0 )){
+        console.log(fizz +" BUZZ");
+    }
+    if(fizz != 0 && ((fizz % 3 == 0) && (fizz % 15 == 0))){
+        console.log(fizz +" FIZZBUZZ");
+    }
+}
+console.log("==================");
