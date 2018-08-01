@@ -66,12 +66,12 @@ else {
 console.log("==================");
 // Exercice n°8 : Calculer mon âge
 console.log("Exercice n°8: Calculer mon âge");
-var annee = prompt("Quelle est l'année actuel ?");
-var anneeNaissance = prompt("Quelle est ton année de naissance ?");
+// var annee = prompt("Quelle est l'année actuel ?");
+// var anneeNaissance = prompt("Quelle est ton année de naissance ?");
 
-var anneeInt = parseInt(annee);
-var anneeNaissanceInt = parseInt(anneeNaissance);
-console.log("Ton âge est de :", anneeInt - anneeNaissanceInt, "ans !");
+// var anneeInt = parseInt(annee);
+// var anneeNaissanceInt = parseInt(anneeNaissance);
+// console.log("Ton âge est de :", anneeInt - anneeNaissanceInt, "ans !");
 console.log("==================");
 
 // Exercice n°9 : Problème de chaussures
@@ -85,4 +85,21 @@ var total = (chaussure + jean + tShirt) - reduction;
 console.log("Le prix total à payer est de :", total, "€");
 console.log("==================");
 
+// Exercice n°10 : Une calculatrice Javascript
+console.log("Exercice n°10 : Une calculatrice Javascript");
+// var chiffre1 = prompt("Choisis le premier chiffre à additionner :");
+// var chiffre2 = prompt("Choisis le deuxième chiffre à additionner : ");
+// var chiffre1Int = parseInt(chiffre1);
+// var chiffre2Int = parseInt(chiffre2);
+// var resultat = chiffre1Int + chiffre2Int;
+// alert(resultat);
+console.log("==================");
 
+
+//Exercice n°11 : Travailler avec les propriétés
+console.log("Exercice n°11 : Travailler avec les propriétés");
+var prenom = prompt("Votre prénom :");
+var nom = prompt("Votre nom :");
+console.log(prenom.substring(0,1).toLocaleUpperCase()+ prenom.substring(prenom.length -1).toLocaleUpperCase());
+console.log(nom.substring(0,1).toLocaleUpperCase() + nom.substring(nom.length -1).toLocaleUpperCase());
+console.log(prenom.substring(0, 1).toLocaleUpperCase() + prenom.substring(prenom.length -1).toLocaleUpperCase() + nom.substring(0, 1).toLocaleUpperCase() + nom.substring(nom.length -1).toLocaleUpperCase());
