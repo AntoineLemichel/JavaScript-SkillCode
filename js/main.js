@@ -310,17 +310,147 @@
 
 
 //Exercice n°27 : Le tableau d'un homme
-var homme = [{
-  nom: "Tawin",
-  prenom: "Andrew",
-  age : 32,
-  dateNaissance : "04/06/1986",
-}];
-function tableauHomme(homme){
-  var table = {};
-  for(var i = 0; i < homme.length; i++){
-    console.log(homme.length);
-  }
-}
-tableauHomme(homme);
-console.log(homme.length);
+// var homme = [
+//   ["Andrew", "Tawin", "04/06/1986", "32 ans"],
+//   ["Antoine", "Lemichel", "04/06/1996", "22 ans"],
+//   ["Bidule", "TrucMuche", "02/01/1985", "33 ans"]
+// ];
+
+// function hommeFunction(homme) {
+//   for (var i = 0; i < homme.length; i++) {
+//     for (var x = 0; x < homme[i].length; x++) {
+//       console.log(homme[i][x]);
+//     }
+//     console.log("============");
+//   }
+// }
+// hommeFunction(homme);
+
+
+//Exercice n°28 : Le max d'un tableau
+// var chiffreMax = [2, 4, 1, 9, 19, 2, 10 ["Bonjour", "Coucou", "Salut"]];
+
+// function functChiffreMax(x) {
+//   if (isNaN(x[0])) {
+//     console.log(false);
+//   } else {
+//     console.log(Math.max(... chiffreMax));
+//   }
+// }
+// functChiffreMax(chiffreMax);
+
+
+//Exercice n°29 : Todo list
+
+// var toDo = [];
+// var choix;
+// function choixFunct(choix) {
+//   while(choix != "fin"){
+//     var choix = prompt("Ajoutez une tâche");
+//     toDo.push(choix);
+//   }
+//   for (var i = 0; i < toDo.length; i++){
+//     console.log(toDo[i]);
+//   }
+// }
+// choixFunct(choix);
+
+
+//Exercice n°30 : Pierre feuille ciseaux
+
+// var choixAdverse = ["Feu", "Eau", "Plante"];
+// var randAdverse = choixAdverse[Math.floor(Math.random() * choixAdverse.length)];
+// var choixJoueur = prompt("Feu / Eau / Plante");
+// var pointJoueur = 0;
+// var pointAdverse = 0;
+// while (pointJoueur < 3 && pointAdverse < 3) {
+//   console.log("Adversaire joue : ",randAdverse);
+//   console.log("Joueur joue :", choixJoueur);
+
+
+//   console.log("T'es points :", pointJoueur);
+//   console.log("Point adversaire :", pointAdverse);
+//   if (choixJoueur.toLocaleLowerCase(choixJoueur) === "feu") {
+//     if (randAdverse == "Feu") {
+//       console.log("Égalité");
+//       choixJoueur = prompt("Feu / Eau / Plante");
+//       randAdverse = choixAdverse[Math.floor(Math.random() * choixAdverse.length)];
+//     }
+//     if (randAdverse == "Eau") {
+//       console.log("Perdu");
+//       pointAdverse++;
+//       choixJoueur = prompt("Feu / Eau / Plante");
+//       randAdverse = choixAdverse[Math.floor(Math.random() * choixAdverse.length)];
+//     }
+//     if (randAdverse == "Plante") {
+//       console.log("Gagné");
+//       pointJoueur++;
+//       choixJoueur = prompt("Feu / Eau / Plante");
+//       randAdverse = choixAdverse[Math.floor(Math.random() * choixAdverse.length)];
+//     }
+//   }
+//   if (choixJoueur.toLocaleLowerCase(choixJoueur) == "eau") {
+//     if (randAdverse == "Feu") {
+//       console.log("Gagné");
+//       pointJoueur++;
+//       choixJoueur = prompt("Feu / Eau / Plante");
+//       randAdverse = choixAdverse[Math.floor(Math.random() * choixAdverse.length)];
+//     }
+//     if (randAdverse == "Eau") {
+//       console.log("Égalité");
+//       choixJoueur = prompt("Feu / Eau / Plante");
+//       randAdverse = choixAdverse[Math.floor(Math.random() * choixAdverse.length)];
+//     }
+//     if (randAdverse == "Plante") {
+//       console.log("Perdu");
+//       pointAdverse++;
+//       choixJoueur = prompt("Feu / Eau / Plante");
+//       randAdverse = choixAdverse[Math.floor(Math.random() * choixAdverse.length)];
+//     }
+//   }
+//   if (choixJoueur.toLocaleLowerCase(choixJoueur) == "plante") {
+//     if (randAdverse == "Feu") {
+//       console.log("Perdu");
+//       pointAdverse++;
+//       choixJoueur = prompt("Feu / Eau / Plante");
+//       randAdverse = choixAdverse[Math.floor(Math.random() * choixAdverse.length)];
+//     }
+//     if (randAdverse == "Eau") {
+//       console.log("Gagné");
+//       pointJoueur++;
+//       choixJoueur = prompt("Feu / Eau / Plante");
+//       randAdverse = choixAdverse[Math.floor(Math.random() * choixAdverse.length)];
+//     }
+//     if (randAdverse == "Plante") {
+//       console.log("Égalité");
+//       choixJoueur = prompt("Feu / Eau / Plante");
+//       randAdverse = choixAdverse[Math.floor(Math.random() * choixAdverse.length)];
+//     }
+//   }
+//   if(choixJoueur.toLocaleLowerCase(choixJoueur) !== "feu" && choixJoueur.toLocaleLowerCase(choixJoueur) !== "eau" && choixJoueur.toLocaleLowerCase(choixJoueur) !== "plante"){
+//     console.log("Recommence, erreur");
+//     choixJoueur = prompt("Feu / Eau / Plante");
+//     randAdverse = choixAdverse[Math.floor(Math.random() * choixAdverse.length)];
+//   }
+// }
+
+
+//Exercice n°31 : Compter le nombre de caractères
+// var str = "Bonjour ! Je m'appelle Jean-Bobby.";
+// var letter = "e";
+
+// function calculString(str, letter) {
+//   var letterCalcul = 0;
+//   for (var i = 0; i < str.length; i++) {
+//       if (str[i] == letter) {
+//         letterCalcul++;
+//       }
+//   }
+//   if(letter.length > 1){
+//     console.log("Trop de caractères");
+//   } else {
+//     console.log("Nombre de : ", letter, "dans la phrase est de :", letterCalcul);
+//   }
+// }
+// calculString(str, letter);
+
