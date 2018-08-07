@@ -358,81 +358,62 @@
 
 //Exercice n°30 : Pierre feuille ciseaux
 
-// var choixAdverse = ["Feu", "Eau", "Plante"];
+var choixAdverse = ["Feu", "Eau", "Plante"];
 // var randAdverse = choixAdverse[Math.floor(Math.random() * choixAdverse.length)];
 // var choixJoueur = prompt("Feu / Eau / Plante");
-// var pointJoueur = 0;
-// var pointAdverse = 0;
-// while (pointJoueur < 3 && pointAdverse < 3) {
-//   console.log("Adversaire joue : ",randAdverse);
-//   console.log("Joueur joue :", choixJoueur);
+var pointJoueur = 0;
+var pointAdverse = 0;
+while (pointJoueur < 3 && pointAdverse < 3) {
+  var choixJoueur = prompt("Feu / Eau / Plante");
+  var randAdverse = choixAdverse[Math.floor(Math.random() * choixAdverse.length)];
+  console.log("Adversaire joue : ", randAdverse);
+  console.log("Joueur joue :", choixJoueur);
+  if(choixJoueur.toLocaleLowerCase(choixJoueur) !== "feu" && choixJoueur.toLocaleLowerCase(choixJoueur) !== "eau" && choixJoueur.toLocaleLowerCase(choixJoueur) !== "plante") {
+    console.log("Recommence, erreur");
+  }
+  if (choixJoueur.toLocaleLowerCase(choixJoueur) === "feu") {
+    if (randAdverse == "Feu") {
+      console.log("Égalité");
+    } else if (randAdverse == "Eau") {
+      console.log("Perdu");
+      pointAdverse++;
+    } else {
+      console.log("Gagné");
+      pointJoueur++;
+    }
+  }
+  if (choixJoueur.toLocaleLowerCase(choixJoueur) == "eau") {
+    if (randAdverse == "Feu") {
+      console.log("Gagné");
+      pointJoueur++;
+    } else if (randAdverse == "Eau") {
+      console.log("Égalité");
+    } else {
+      console.log("Perdu");
+      pointAdverse++;
+    }
+  }
+  if (choixJoueur.toLocaleLowerCase(choixJoueur) == "plante") {
+    if (randAdverse == "Feu") {
+      console.log("Perdu");
+      pointAdverse++;
+    } else if (randAdverse == "Eau") {
+      console.log("Gagné");
+      pointJoueur++;
+    } else {
+      console.log("Égalité");
+    }
+  }
+  if(pointJoueur === 3){
+      alert("Tu as gagné la partie !");
+  }
+  else if (pointAdverse === 3){
+      alert("L'ordinateur à gagné");
+  }
 
-
-//   console.log("T'es points :", pointJoueur);
-//   console.log("Point adversaire :", pointAdverse);
-//   if (choixJoueur.toLocaleLowerCase(choixJoueur) === "feu") {
-//     if (randAdverse == "Feu") {
-//       console.log("Égalité");
-//       choixJoueur = prompt("Feu / Eau / Plante");
-//       randAdverse = choixAdverse[Math.floor(Math.random() * choixAdverse.length)];
-//     }
-//     if (randAdverse == "Eau") {
-//       console.log("Perdu");
-//       pointAdverse++;
-//       choixJoueur = prompt("Feu / Eau / Plante");
-//       randAdverse = choixAdverse[Math.floor(Math.random() * choixAdverse.length)];
-//     }
-//     if (randAdverse == "Plante") {
-//       console.log("Gagné");
-//       pointJoueur++;
-//       choixJoueur = prompt("Feu / Eau / Plante");
-//       randAdverse = choixAdverse[Math.floor(Math.random() * choixAdverse.length)];
-//     }
-//   }
-//   if (choixJoueur.toLocaleLowerCase(choixJoueur) == "eau") {
-//     if (randAdverse == "Feu") {
-//       console.log("Gagné");
-//       pointJoueur++;
-//       choixJoueur = prompt("Feu / Eau / Plante");
-//       randAdverse = choixAdverse[Math.floor(Math.random() * choixAdverse.length)];
-//     }
-//     if (randAdverse == "Eau") {
-//       console.log("Égalité");
-//       choixJoueur = prompt("Feu / Eau / Plante");
-//       randAdverse = choixAdverse[Math.floor(Math.random() * choixAdverse.length)];
-//     }
-//     if (randAdverse == "Plante") {
-//       console.log("Perdu");
-//       pointAdverse++;
-//       choixJoueur = prompt("Feu / Eau / Plante");
-//       randAdverse = choixAdverse[Math.floor(Math.random() * choixAdverse.length)];
-//     }
-//   }
-//   if (choixJoueur.toLocaleLowerCase(choixJoueur) == "plante") {
-//     if (randAdverse == "Feu") {
-//       console.log("Perdu");
-//       pointAdverse++;
-//       choixJoueur = prompt("Feu / Eau / Plante");
-//       randAdverse = choixAdverse[Math.floor(Math.random() * choixAdverse.length)];
-//     }
-//     if (randAdverse == "Eau") {
-//       console.log("Gagné");
-//       pointJoueur++;
-//       choixJoueur = prompt("Feu / Eau / Plante");
-//       randAdverse = choixAdverse[Math.floor(Math.random() * choixAdverse.length)];
-//     }
-//     if (randAdverse == "Plante") {
-//       console.log("Égalité");
-//       choixJoueur = prompt("Feu / Eau / Plante");
-//       randAdverse = choixAdverse[Math.floor(Math.random() * choixAdverse.length)];
-//     }
-//   }
-//   if(choixJoueur.toLocaleLowerCase(choixJoueur) !== "feu" && choixJoueur.toLocaleLowerCase(choixJoueur) !== "eau" && choixJoueur.toLocaleLowerCase(choixJoueur) !== "plante"){
-//     console.log("Recommence, erreur");
-//     choixJoueur = prompt("Feu / Eau / Plante");
-//     randAdverse = choixAdverse[Math.floor(Math.random() * choixAdverse.length)];
-//   }
-// }
+  console.log("T'es points :", pointJoueur);
+  console.log("Point adversaire :", pointAdverse);
+}
 
 
 //Exercice n°31 : Compter le nombre de caractères
@@ -453,4 +434,3 @@
 //   }
 // }
 // calculString(str, letter);
-
