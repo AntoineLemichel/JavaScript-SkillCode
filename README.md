@@ -1,0 +1,3 @@
+# JavaScript-SkillCode
+
+Exercice JavaScript 
